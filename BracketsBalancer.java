@@ -1,12 +1,15 @@
 package com.nikita;
 
-import java.util.Scanner;
 import java.util.Stack;
 
 public class BracketsBalancer {
+
     public Boolean isBalanced(String s) {
+
         Stack<Character> stack = new Stack<>();
+
         for (int i = 0; i < s.length(); i++) {
+
             char ch = s.charAt(i);
             // Если скобка открывающася, то помещяем ее сразу в стэк
             if (ch == '(') {
@@ -20,9 +23,9 @@ public class BracketsBalancer {
             if (ch == ')') {
                 stack.pop();
             }
+
         }
         return stack.empty();
     }
-
 
 }

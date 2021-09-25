@@ -1,7 +1,6 @@
 package com.nikita;
 
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 
@@ -15,6 +14,7 @@ public class Main {
         BracketsBalancer bracketsBalancer = new BracketsBalancer();
         Boolean resultIsBalanced = bracketsBalancer.isBalanced(s);
         System.out.println(resultIsBalanced);
+
     }
 
 }
